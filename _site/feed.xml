@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>I'm interested in the use of data analytics and visualization to improve the quality and reach of clinical care. Co-Founder of Hatching Health.</description>
+    <link>https://danielraff.com/</link>
+    <atom:link href="https://danielraff.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 31 Mar 2018 13:42:18 -0700</pubDate>
+    <lastBuildDate>Sat, 31 Mar 2018 13:42:18 -0700</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>What is a Website Address?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/blog/website_address.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You open up your internet browser, type in a website address (&lt;em&gt;URL&lt;/em&gt;) and within seconds, you arrive at your destination. But what goes on under the hood? How does typing in a URL load a webpage, and not just any webpage for that matter, but the unique webpage you requested?&lt;/p&gt;
+
+&lt;p&gt;Before we can discuss website addresses, we should ask &lt;em&gt;what is a website?&lt;/em&gt; Take a website like &lt;code class=&quot;highlighter-rouge&quot;&gt;reddit.com&lt;/code&gt; When we access Reddit and spend hours looking at &lt;a href=&quot;https://www.reddit.com/r/aww/&quot;&gt;pictures of cats&lt;/a&gt;, what we are actually doing is checking out the content on Reddit’s servers (or the content that it references on other servers).&lt;/p&gt;
+
+&lt;p&gt;Every server has its own unique IP Address (Internet Protocol Address). You can think about &lt;strong&gt;GPS Coordinates&lt;/strong&gt; for a building address as being the real world equivalent of an IP Address. Every server has a unique IP address just like every building in the world has unique &lt;strong&gt;GPS Coordinates&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;The ICICS Building at UBC&lt;/th&gt;
+      &lt;th&gt;Google Maps Server&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;GPS:&lt;/strong&gt; &lt;a href=&quot;https://www.google.ca/maps/search/49.2611454,-123.2489258&quot;&gt;49.2611454,-123.2489258&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;IP Address:&lt;/strong&gt; &lt;a href=&quot;https://maps.google.com&quot;&gt;216.58.193.78&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;note: for a massive website like Google Maps, it’s not just one server or the website would quickly crash, instead it’s many servers. For the sake of simplicity we’ll pretend it’s only one server.&lt;/em&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Let’s conduct a little experiment:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Look long and hard at the GPS Coordinates above. Let’s see if you can remember those coordinates. How many of the digits can you remember when you close your eyes?&lt;/p&gt;
+
+  &lt;p&gt;Okay. Close your eyes!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That was hard. It’s bulky and inconvenient to remember GPS coordinates for building addresses just like it’s challenging to remember IP addresses to access their corresponding servers.&lt;/p&gt;
+
+&lt;p&gt;If you’re a human like me, a website address or URL is a much simpler way to access a particular website. Think about a URL as being the &lt;strong&gt;Street Address&lt;/strong&gt; for a website. URL stands for &lt;code class=&quot;highlighter-rouge&quot;&gt;Uniform Resource Locator&lt;/code&gt; which is fancy speak for a placeholder that locates a unique resource&lt;sup&gt;1&lt;/sup&gt; (in our case, a website) on the internet.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ICICS Building at UBC&lt;/th&gt;
+      &lt;th&gt;Google Maps&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Street Address:&lt;/strong&gt; &lt;a href=&quot;https://www.google.ca/maps/search/2366+Main+Mall,+Vancouver,+BC+V6T+1Z4/&quot;&gt;2366 Main Mall&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=&quot;https://maps.google.com&quot;&gt;maps.google.com&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Let’s try this again!&lt;/p&gt;
+
+  &lt;p&gt;Look at that Street Address above. Think you can remember it?&lt;/p&gt;
+
+  &lt;p&gt;Okay. Close your eyes!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That was much easier!&lt;/p&gt;
+
+&lt;p&gt;Okay, so far we have IP Addresses that correspond to a server, which in turn has the information for a website. Additionally, we have a URL which is far easier to remember than an IP address.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;getting-from-a-url-to-an-ip-address&quot;&gt;Getting from a URL to an IP Address&lt;/h3&gt;
+
+&lt;p&gt;To get from a URL (easy for humans to remember) to an IP Address (necessary for your to load the website from the server), we use the Domain Name System (DNS).&lt;/p&gt;
+
+&lt;p&gt;The DNS is essentially a matching system that matches a URL to its corresponding IP Address.&lt;/p&gt;
+
+&lt;p&gt;Let’s walk through what happens after you enter that URL:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.buzzfeed.com/buzzfeed-static/static/2014-05/enhanced/webdr06/8/12/anigif_original-31541-1399566411-4.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;step-1-the-easy-one&quot;&gt;Step 1: The Easy One&lt;/h5&gt;
+
+&lt;p&gt;Your computer tries to determine if it already has the IP address corresponding to the URL you entered saved somewhere nearby. It does this by first looking in the internet browser’s cache (memory), then in the Operating System’s cache, and finally looks on the internet router’s cache.&lt;/p&gt;
+
+&lt;h5 id=&quot;step-2-the-big-one&quot;&gt;Step 2: The Big One&lt;/h5&gt;
+
+&lt;p&gt;If it’s not found anywhere nearby, you and your computer are going to have to go on a journey to figure it out in a process called &lt;em&gt;DNS Lookup&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;To understand this, let’s take apart a URL and find out what’s inside:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;img src=&quot;/assets/images/blog/anatomy_of_a_url.gif&quot; alt=&quot;&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Anatomy_of_a_URL_https.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The https:// refers to the Hypertext Transfer Protocol (Secure). This is the protocol by which your browser gets the information once it has the IP Address. We aren’t going to go into detail on how this protocol works, but if you are curious here’s a good &lt;a href=&quot;https://www.youtube.com/watch?v=po3zYOe00O4&quot;&gt;video&lt;/a&gt; and if you really want to blow your mind this &lt;a href=&quot;https://www.youtube.com/watch?v=scWj1BMRHUA&quot;&gt;video&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Anatomy_of_a_URL_Domain_Name.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The rest is the domain name. This is read from Right -&amp;gt; Left.&lt;/p&gt;
+
+&lt;p&gt;The domain name is the &lt;em&gt;meat&lt;/em&gt; of our URL, so we’ll think about it as the street address.&lt;/p&gt;
+
+&lt;p&gt;When your browser is trying to lookup a DNS, it starts with a DNS Resolver, which is a server provided by your ISP (internet service provider) for the purposes of finding a URL. In our street address analogy, we can think about the DNS Resolver as being the car that gets us to the address we typed in. Let’s try and get to the address &lt;code class=&quot;highlighter-rouge&quot;&gt;maps.google.com.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;First, let’s take apart the domain name even more.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Anatomy_of_a_URL_root.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See that little dot at the end of the domain name? In your regular browser that doesn’t show up, but behind the scenes it’s there and it’s important. It’s called the &lt;strong&gt;root&lt;/strong&gt;. Consider it to be the highway of the DNS. When your car (DNS Resolver) begins its journey, it starts by driving along a &lt;strong&gt;Root Name Highway&lt;/strong&gt;. These are the Root Name servers, which have their own IP Addresses (13 of them in the whole world)&lt;sup&gt;1&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Path_Root.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As our car is driving along the highway it’s looking for the &lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt; sign. In reality what happens is our DNS Resolver has asked the Root Name Servers for the IP Address of the &lt;strong&gt;.com Name Server&lt;/strong&gt; which has the information about &lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt; Top Level Domains. With that information in hand, we drive towards &lt;strong&gt;.com Street&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Anatomy_of_a_URL_TLD.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt; is an example of a TLD (Top Level Domain). There are gTLDs (generic TLDs) such as &lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt; which is the earliest and most widely used, dating back to 1985&lt;sup&gt;1&lt;/sup&gt;. There are also ccTLDs (Country Code TLDs) which are generally reserved for countries and regions. &lt;code class=&quot;highlighter-rouge&quot;&gt;.ca&lt;/code&gt; was actually created at UBC Computer Science by John Demco in 1987&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;When our car (DNS Resolver) gets to &lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt; street (or the &lt;strong&gt;.com Name Server&lt;/strong&gt;), we start looking for signs to Google. Our DNS Resolver has asked the &lt;strong&gt;.com Name Server&lt;/strong&gt; for the IP Address of Google. With that information in hand, we drive towards the Google Tower.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Path_com.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Anatomy_of_a_URL_Mid_and_Sub_Level_Domain.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Middle-Level Domains are what makes each website unique. Compare &lt;code class=&quot;highlighter-rouge&quot;&gt;google.ca&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;ubc.ca&lt;/code&gt;. Even though the &lt;code class=&quot;highlighter-rouge&quot;&gt;.ca&lt;/code&gt; TLD is the same, the websites loaded are very different, because the Middle-Level Domains are different.&lt;/p&gt;
+
+&lt;p&gt;Our car (DNS Resolver) has finally arrived at its destination, Google Tower (&lt;code class=&quot;highlighter-rouge&quot;&gt;google.com&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Path_Tower.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But we actually want to get to the Maps Floor, which is the Sub-Level Domain (&lt;code class=&quot;highlighter-rouge&quot;&gt;maps.google&lt;/code&gt;). To do this our DNS Resolver asks the Google Servers where to go (the Doorman at Google Towers), and we are given the final IP Address of &lt;code class=&quot;highlighter-rouge&quot;&gt;maps.google.com&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/Path_Tower_Floor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We’ve covered a lot here. We now understand that a URL is an easy to digest way to refer to an IP Address and that an IP Address specifies a server (which in our case was hosting a website). We’ve learned about the Domain Name System (DNS) and how when given a URL, it can spit out an IP Address for our browsers.&lt;/p&gt;
+
+&lt;p&gt;If you want to know what happens next, how our browser is able to show us a webpage once it’s found the right IP Address check out this link: &lt;a href=&quot;https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a&quot;&gt;Medium Article&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;a href=&quot;https://webhostinggeeks.com/guides/domains/&quot;&gt;https://webhostinggeeks.com/guides/domains/&lt;/a&gt;&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt;&lt;a href=&quot;https://www.ubc.ca/stories/2015-fall/100-years-of-discovery/1980-1989/#event-tl-iexzrg&quot;&gt;https://www.ubc.ca/stories/2015-fall/100-years-of-discovery/1980-1989/#event-tl-iexzrg&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After Reading and Learning Concepts from:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.podcasts.com/techstuff&quot;&gt;http://www.podcasts.com/techstuff&lt;/a&gt; ; Podcast: What’s my Address&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=72snZctFFtA&quot;&gt;https://www.youtube.com/watch?v=72snZctFFtA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7_LPdttKXPc&quot;&gt;https://www.youtube.com/watch?v=7_LPdttKXPc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name&quot;&gt;https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a&quot;&gt;Medium Article by Maneesha Wijesinghe&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 19 Sep 2017 10:48:23 -0700</pubDate>
+        <link>https://danielraff.com/data_science/What-is-a-website-address.html</link>
+        <guid isPermaLink="true">https://danielraff.com/data_science/What-is-a-website-address.html</guid>
+        
+        <category>internet</category>
+        
+        
+        <category>data_science</category>
+        
+      </item>
+    
+      <item>
+        <title>Your First Breath</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/blog/first_breath.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I wrote the passage below following my first clinical experience with child birth.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I’ve always felt deprived of my childhood memories. People share stories about what they felt when they were five years old, but I very rarely actually feel these memories. To me it’s more like I’m looking at a photo of the event; in fact, perhaps most of my memories are just memories of memories - memories of a photo or event as described to me by others. This is certainly the way it feels most of the time, but when I do have a memory of my childhood, a &lt;em&gt;real&lt;/em&gt; memory, it completely envelopes me. I relive it.&lt;/p&gt;
+
+&lt;p&gt;It was in the Cardiology block in my 1st year of medical school. The tutor for our small group session looked around and asked if we knew what happened to the circulation system when that baby takes its first breath. This concept seemed oddly familiar. The gears in my brain slowly turned, and a vivid memory crashed into me. I must have been 5 or 6,  sitting in one of the tall chairs (not quite as tall to me anymore) that accompany the granite counter-top in our kitchen at home. My dad (who dabbles as a cardiologist) was explaining in his characteristically over-detailed manner, cardiac circulation. “See in a baby, the lungs don’t need to breathe because the baby is still inside the tummy” he explained, going on to detail how with the first breath all of a sudden the blood that previously skipped the lungs, now went there. He explained to me how there were these pathways that allowed the blood to skip the lungs and other parts of the body and how these closed when the baby took that breath.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Surprised at this unlocked knowledge, I blurted it out in our small group session and managed to piece together the information: how the PDA (&lt;a href=&quot;https://en.wikipedia.org/wiki/Patent_ductus_arteriosus&quot;&gt;patent ductus arteriosus&lt;/a&gt;) closes, how the circulation changes cause a change in pressure making the left atrium greater than the right atrium and the closure of the foramen ovale (and admittedly didn’t touch on the bypass of the liver through the ductus venosus which also closes).&lt;/p&gt;
+
+&lt;p&gt;Pretty excited that I’d remembered something from 10 years ago, I tucked this memory away. A few weeks later, I was shadowing an anesthesiologist on a school night. It was already 12am and I had class the next morning at 8am. The resident turned to me and said that I can go home if I want to, but that if I stick around for another hour I can see a C-section. Well obviously I stayed. The whole thing was amazing.. I’ll fast forward to the moment. I’m at the foot of the bed, watching as the surgeons first pull this tan and wet blob out of her. One surgeon pushes, while the other pulls. The baby is vigorously plucked out. It’s blue, but I didn’t realize quite how blue. It’s a girl. In what seemed like an eternity, there’s no sound, and then SHE BREATHES. She cries. So quickly, she turns from her blue-ish colour to a bright pink. I saw this happen. This amazing miracle that first enticed me when I was a child, then I learned intellectually, I was unfold before my eyes. I was seeing as the resistance in her lungs decreased and blood started to flow in that direction. I was seeing as her right atrial pressure decreased and her foramen ovale was physiologically shut. I was seeing as she started to oxygenate her &lt;em&gt;own&lt;/em&gt; blood. MIND BLOWING.&lt;/p&gt;
+
+&lt;p&gt;This pattern of being curious about something, then learning about it, then actually seeing it has got to be one of the most significant learning experiences of my life. I am so excited to repeat this throughout medicine.&lt;/p&gt;
+
+&lt;p&gt;Another thing that I’m very excited for is to have a daughter of my own, who I can pass this down to. Someone that I can put in that spark of curiosity and explanation that lights a fire in them the same way my dad did so for me.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Sep 2017 10:48:23 -0700</pubDate>
+        <link>https://danielraff.com/medicine/Your-First-Breath.html</link>
+        <guid isPermaLink="true">https://danielraff.com/medicine/Your-First-Breath.html</guid>
+        
+        <category>medicine</category>
+        
+        
+        <category>medicine</category>
+        
+      </item>
+    
+  </channel>
+</rss>
