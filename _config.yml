@@ -3,7 +3,7 @@ name: Alexander Kleefeldt
 job_title: Aspiring Data Scientist
 email: akleefel@gmail.com
 description: I'm interested in the use of data analytics and visualization to sustanably solve business problems.
-avatar: [assets/images/UBC_20170905_8651.jpg](assets/images/UBC_20170905_8651.jpg)
+avatar: http://www.gravatar.com/avatar/eb7c901359e6eb94a2142a2c1a7b1b5e
 favicon: /favicon.ico
 twitter_handler: akleefel
 analytics_code: UA-116431800-1
@@ -55,7 +55,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: "https://akleefel.com"
+url: "https://danielraff.com"
 baseurl: ""
 
 # Includes
