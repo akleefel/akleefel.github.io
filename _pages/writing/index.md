@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Things I Wrote - Blog"
+title:  "Blog"
 permalink: "/blog/"
 ---
 
