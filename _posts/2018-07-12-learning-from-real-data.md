@@ -4,7 +4,7 @@ title: Learning from real data
 subtitle: Six lessons I have learned from my first "real" project as a data scientist
 ---
 
-For the past three months, I was on a team of UBC [Master of Data Science](https://ubc-mds.github.io/) (MDS) students working on our MDS capstone project. Our team developed a data science product to help the course creators on the [Thinkific](thinkific.com) e-learning platform to improve their online courses. Unsurprisingly, working on the improvement of online learning was a great learning experience for ourselves. Therefore, to share some of my experiences, and as a reminder to my future self, in this post I will summarize the six most important lessons I learned during the project. But first, to give some context, I'll quickly describe the client and the project.
+Originally, I wanted to call this blog post "More Data, More Problems". Clearly, this hip-hop reference would have been a cool start for my first post - but then again as a data scientist, I probably should not complain about having *too much* available data. So jokes aside. For the past three months, I was part of a team of UBC [Master of Data Science](https://ubc-mds.github.io/) (MDS) students working on our MDS capstone project. Our team developed a data science product to help the course creators on the [Thinkific](thinkific.com) e-learning platform to improve their online courses. Unsurprisingly, working on the improvement of online learning was a great learning experience for ourselves. Therefore, to share some of my experiences, and as a reminder to my future self, in this post I will summarize the six most important lessons I learned during the project. But first, to give some context, I'll quickly describe the client and the project.
 
 ### The project
 
@@ -24,7 +24,7 @@ Here's an image of a sample output of our package:
 
 ### Lessons learned
 
-Here is what I learned while working on this project. 
+Here is what I learned while working on this project.
 
 #### 1. Communicate with your team
 
@@ -44,7 +44,7 @@ Do as much data wrangling as possible in SQL to decrease processing times and me
 
 #### 5. Keep an open mind
 
-If your initial plan does not work out, don't panic! Stay creative and flexible, and adjust to changes. Throughout the  project, we had several moments in which our conceptual framework seemed to fail. For example, we had initially planned to follow a linear regression approach due to the easy interpretability of weights as feature importances. However, this led to disappointing validation accuracy scores. At the same time, we noticed that non-linear approaches such as a random forest regressor and gradient boosting regressor performed significantly better. 
+If your initial plan does not work out, don't panic! Stay creative and flexible, and adjust to changes. Throughout the  project, we had several moments in which our conceptual framework seemed to fail. For example, we had initially planned to follow a linear regression approach due to the easy interpretability of weights as feature importances. However, this led to disappointing validation accuracy scores. At the same time, we noticed that non-linear approaches such as a random forest regressor and gradient boosting regressor performed significantly better.
 
 #### 6. Be aware of your assumptions and communicate them
 
